@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devil May Cry 5</title>
+    <link rel="icon" href="http://www.devilmaycry5.com/assets/img/common/share.png">
+    <link rel="stylesheet" href="./reset.min.css">
+</head>
+<style>
+    .nev {
+        width: 100%;
+        height: 101.74px;
+        background: #000000cc;
+        position: relative;
+        opacity: 0.8;
+        position: fixed;
+        animation: top;
+        animation-iteration-count: 1;
+        animation: top 0.75s linear 1;
+        z-index: 99;
+        margin-top: -180px;
+    }
+
+    @keyframes top {
+        0% {
+            transform: scaleY(1);
+            margin-top: -250px;
+            opacity: 0;
+        }
+
+        100% {
+            transform: scaleY(1);
+            margin-top: -180px;
+        }
+
+    }
+
+    .tianchong {
+        width: 100%;
+        display: flex;
+        height: 100px;
+    }
+
+    .nev a {
+        font-size: 24.576px;
+        color: rgb(255, 255, 255);
+        padding: 0px 24.576px 0px 20.480px;
+        display: inline-block;
+        margin: 0 15px 0 15px;
+
+
+    }
+
+    /* .nev a:hover {
+    background-image: url(../官网/图片/icon_current_left.png), url(../官网/图片/icon_current_right.png);
+    background-position: 0 0, right 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: 1px solid #355758;
+    border-top: 1px solid #355758;
+} */
+    .ulist a:hover {
+        background-image: url(./图片/icon_current_left.png), url(./图片/icon_current_right.png);
+        background-position: 0 0, right 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-bottom: 1px solid #355758;
+        border-top: 1px solid #355758;
+    }
+
+    .ulist {
+        position: absolute;
+        width: 1290.2400px;
+        height: 41px;
+        padding: 30.720px;
+        margin: 0px 420.687px 0px 400.687px;
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+
+
+    }
+
+    .nev img {
+        position: absolute;
+        width: 187px;
+        height: 42px;
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+
+    .buy {
+        width: 245.75px;
+        height: 101.74px;
+        background-color: red;
+        background-image: -webkit-linear-gradient(90deg, #860404 0%, #c51212 100%);
+        display: block;
+        position: absolute;
+        margin-left: 1785px;
+        font-size: 24.576px;
+        line-height: 101.74px;
+        color: #fff;
+        text-align: center;
+        margin-left: 1802px;
+    }
+
+    .buy a {
+        padding: 30.720px;
+    }
+
+    #box {
+        height: 81.91px;
+        width: 81.91px;
+        background: #000000cc;
+        position: fixed;
+        right: 34px;
+        bottom: 120px;
+        opacity: 0;
+        transition: opacity 1s;
+        z-index: 10;
+    }
+
+    .bigimg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        background-image: url(./图片三/movie_bg.jpg);
+    }
+
+    .inner p {
+        font-size: 143.36px;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-shadow: 0 0 16px #000;
+        font-family: 'Cormorant Garamond', serif;
+        position: relative;
+        margin-top: 180px;
+        margin-left: 165px;
+    }
+
+    .img1 {
+        position: absolute;
+        margin-top: -94px;
+        width: 444.85px;
+        height: 74.78px;
+        margin-left: 130px;
+
+    }
+
+    .img2 {
+        position: absolute;
+        margin-top: -40px;
+        width: 163.84px;
+        height: 37.2px;
+        margin-left: 120px;
+
+    }
+
+    .img3 {
+        position: absolute;
+        margin-top: -38px;
+        width: 143px;
+        height: 28px;
+        margin-left: 260px;
+
+    }
+
+    .list1 {
+        width: 2031.2px;
+        height: 419.09px;
+        background: #000000B3;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .list1 li {
+        width: 1015.6px;
+        height: 337.18px;
+        float: left;
+    }
+
+    .list1 img {
+        width: 1015.6px;
+        height: 337.18px;
+
+    }
+
+    .list1 a {
+        font-size: 51.2px;
+        color: #C3C3C3;
+        display: inline-block;
+        width: 1015.6px;
+        height: 81.91px;
+        font-family: 'NotoSerifCJKjp', sans-serif;
+        text-align: center;
+    }
+
+    .list2 {
+        width: 1015.6px;
+        height: 419.09px;
+        background: #000000B3;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 65px;
+    }
+
+    .list2 li {
+        width: 1015.6px;
+        height: 337.18px;
+        float: left;
+
+    }
+
+    .list2 img {
+        width: 1015.6px;
+        height: 337.18px;
+
+    }
+
+    .list2 a {
+        font-size: 51.2px;
+        color: #C3C3C3;
+        display: inline-block;
+        width: 1015.6px;
+        height: 81.91px;
+        font-family: 'NotoSerifCJKjp', sans-serif;
+        text-align: center;
+    }
+
+    .list3 {
+        width: 2031.2px;
+        height: 375.41px;
+        position: absolute;
+        margin-top: 65px;
+        margin-left: -330px;
+    }
+
+    .list3 li {
+        float: right;
+        margin-left: 40px;
+    }
+
+    .list3 img {
+        width: 421.75px;
+        height: 326.26px;
+    }
+
+    .list3 a {
+        display: inline-block;
+        width: 421.75px;
+        height: 60px;
+        background: #000000B3;
+        line-height: 60px;
+        text-align: center;
+        margin-top: -3px;
+        color: #C3C3C3;
+        font-size: 30.72px;
+        font-family: 'NotoSerifCJKjp', sans-serif;
+    }
+
+    .botimg {
+        width: 2031.2px;
+        height: 254.04px;
+        background: #000000;
+        position: relative;
+        margin-top: 1800px;
+        margin-left: 0px;
+    }
+
+    .botimg li {
+        display: inline-block;
+    }
+
+    .botimg ul {
+        padding: 10px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background: #000000;
+    }
+
+    .min {
+        width: 445.58px;
+        height: 76.22px;
+        background: black;
+        margin: 0 auto;
+    }
+
+    .xbox {
+        width: 155.48px;
+        height: 53.23px;
+    }
+
+    .ac {
+        width: 56.51px;
+        height: 53.23px;
+    }
+
+    .ps4 {
+        width: 103.58px;
+        height: 53.23px;
+    }
+
+    .steam {
+        width: 119.01px;
+        height: 53.23px;
+    }
+
+    .xbox img {
+        width: 135px;
+        height: 27px;
+        padding: 10px;
+    }
+
+    .ac img {
+        width: 36.04px;
+        height: 28px;
+        padding: 10px;
+    }
+
+    .ps4 img {
+        width: 83.1px;
+        height: 17px;
+        padding: 10px;
+    }
+
+    .steam img {
+        width: 98.54px;
+        height: 24px;
+        padding: 10px;
+    }
+
+    .textmore {
+        font-size: 1px;
+        color: #666666;
+        text-align: center;
+    }
+
+    .botimg a {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: underline;
+        position: relative;
+        margin-left: 975px;
+
+    }
+
+    .butlast {
+        background: black;
+        width: 2031.2px;
+        height: 87.02px;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .botimg p {
+        color: #666666;
+        text-align: center;
+    }
+
+    .botimg .imgbtn {
+        width: 106px;
+        height: 20px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .in {
+        width: 1585.45px;
+        height: 1361.31px;
+        position: absolute;
+        margin-top: 135px;
+        margin-left: 200px;
+        display: block;
+        animation: move 1s linear 1;
+    }
+
+
+
+
+
+
+    @keyframes move {
+        0% {
+            transform: scaleX(1);
+            margin-left: -20px;
+            opacity: 0;
+        }
+
+        100% {
+            transform: scaleX(1);
+
+        }
+    }
+
+    .in li {
+        float: left;
+        width: 490px;
+        height: 355.68px;
+        background: #0D1226B3;
+        margin-left: 38px;
+        margin-bottom: 45px;
+    }
+
+    .in img {
+        width: 490px;
+        height: 275.63px;
+    }
+
+    .in p {
+        font-size: 24.576px;
+        color: #fff;
+        font-family: "NotoSerifCJKjp", sans-serif;
+        background: rgba(13, 18, 38, 0.7);
+        font-style: normal;
+        padding: 20.48px 20.48px 40.96px;
+    }
+
+    .in a {
+        width: 122.88px;
+        height: 122.88px;
+        display: block;
+        position: absolute;
+        margin-top: -290px;
+        margin-left: 180px;
+        border-radius: 50%;
+        border: 2px solid white;
+        color: #FFF;
+        text-align: center;
+        line-height: 122.88px;
+        font-size: 50px;
+        background: #000;
+        opacity: 0.6;
+        /* background: url(./图片三/icon_movie_d.png); */
+    }
+
+    .in a:hover {
+        border-style: solid;
+
+        border-top-color: red;
+
+        border-bottom-color: paleturquoise;
+
+        border-left-color: palevioletred;
+
+        border-right-color: darkcyan;
+        background: #FFF;
+        color: #000;
+        transition: .5s;
+    }
+
+    .icon {
+        width: 2031.2px;
+        position: absolute;
+        margin-top: 1510px;
+        background: #17181E;
+    }
+
+    .icon img {
+        margin: 0px 0px 0px 740px;
+    }
+</style>
+
+<body>
+    <!-- 导航条 -->
+    <div class="nev">
+        <img src="./图片/logo_dmc5.png" alt="">
+        <ul class="ulist">
+            <a href="./Devil_ABOUT.html">A B U O T</a>
+            <a href="./Devil_CHARACTER.html">C H A R A C T E R</a>
+            <a href="./Devil_SYSTEM.html">S Y S T E M</a>
+            <a href="./Devil_MOVIE.html">M O V I E</a>
+            <a href="./Devil_NEWS.html">N E W S</a>
+            <a href="./Devil_DLC.html">D L C</a>
+
+        </ul><span class="buy">
+            <p href="">B U Y</p>
+        </span>
+    </div>
+    <!-- 背景 -->
+    <div class="bigimg"></div>
+    <div class="inner">
+        <p>MOVIE</p>
+        <img class="img1" src="./图片/title_underbar_black.png" alt="">
+        <img class="img2" src="./图片/title_underbar_red.png" alt="">
+        <img class="img3" src="./图片/title_underbar_green.png" alt="">
+    </div>
+    <ul class="in">
+        <li><img src="./图片三//e3.jpg" alt="">
+            <p>V战斗曲</p><a href="./图片/Devil May Cry 5 - final Trailer背景動画PC.mp4">></a>
+        </li>
+        <li><img src="./图片三/gamescom.jpg" alt="">
+            <p>Main Trailer</p><a href="">></a>
+        </li>
+        <li><img src="./图片三/final_trailer.jpg" alt="">
+            <p>Final Trailer</p><a href="">></a>
+        </li>
+
+
+        <li><img src="./图片三/v_mv.jpg" alt="">
+            <p>E3 2018 TRAILER</p><a href="">></a>
+        </li>
+        <li><img src="./图片三/tgs2018.jpg" alt="">
+            <p>GAMESCOM 2018 TRAILER</p><a href="">></a>
+        </li>
+        <li><img src="./图片三/tga2018.jpg" alt="">
+            <p>TGS2018 TRAILER</p><a href="">></a>
+        </li>
+
+
+        <li><img src="./图片三/nero_mv.jpg" alt="">
+            <p>Nero战斗曲</p><a href="*">></a>
+        </li>
+
+    </ul>
+
+
+
+    <div class="icon"><img src="./图片五/QQ图片20220818145229.png" alt=""></div>
+    <div class="botimg">
+
+
+        <ul>
+            <div class="min">
+                <li class="xbox"><img src="./图片/xboxone_c_b.png" alt=""></li>
+                <li class="ac"><img src="./图片/psf_b.png" alt=""></li>
+                <li class="ps4"><img src="./图片/ps4_b.png" alt=""></li>
+                <li class="steam"><img src="./图片/steam_b.png" alt=""></li>
+
+            </div>
+            <p class="textmore">"PlayStation" and the "PS" Family logo are registered trademarks and "PS4" is a
+                trademark of Sony Interactive Entertainment Inc.<br>©Valve Corporation. Steam and the Steam logo are
+                trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</p>
+        </ul>
+        <div class="butlast">
+            <div class="butlast1">
+                <a href="">Privacy Policy</a>
+                <img class="imgbtn" src="./图片/capcom_c_f.png" alt="">
+                <p>© CAPCOM CO.,LTD. 2019 ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+    <!--  <ul class="sange">
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+    </ul> -->
+
+    <!-- 返回顶部 -->
+    <img id="box" src="./图片/top_btn.png"></img>
+
+
+
+
+
+    <script src="./utils.js"></script>
+    <script>
+        let box = document.getElementById("box");
+        let html = document.documentElement || document.body;
+        window.onscroll = function () {
+            if (html.scrollTop > 50) {
+                box.style.opacity = 0.8;
+            } else {
+                box.style.opacity = 0;
+            }
+        }
+
+        let timer = null, speed = 50;
+        box.onclick = function () {
+            //html.scrollTop=0;
+            if (timer == null) {
+                timer = setInterval(function () {
+                    if (html.scrollTop <= 0) {
+                        clearInterval(timer);
+                        timer = null;
+                        html.scrollTop = 0;
+                        return;
+                    }
+                    html.scrollTop -= speed;
+                }, 10)
+            }
+        }
+
+    </script>
+</body>
+
+</html>

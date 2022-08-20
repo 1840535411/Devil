@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devil May Cry 5</title>
+    <link rel="icon" href="http://www.devilmaycry5.com/assets/img/common/share.png">
+    <link rel="stylesheet" href="./reset.min.css">
+</head>
+<style>
+    .nev {
+        width: 100%;
+        height: 101.74px;
+        background: #000000cc;
+        position: relative;
+        opacity: 0.8;
+        position: fixed;
+        animation: top;
+        animation-iteration-count: 1;
+        animation: top 0.75s linear 1;
+        z-index: 99;
+        margin-top: -180px;
+    }
+
+    @keyframes top {
+        0% {
+            transform: scaleY(1);
+            margin-top: -250px;
+            opacity: 0;
+        }
+
+        100% {
+            transform: scaleY(1);
+            margin-top: -180px;
+        }
+
+    }
+
+    .tianchong {
+        width: 100%;
+        display: flex;
+        height: 100px;
+    }
+
+    .nev a {
+        font-size: 24.576px;
+        color: rgb(255, 255, 255);
+        padding: 0px 24.576px 0px 20.480px;
+        display: inline-block;
+        margin: 0 15px 0 15px;
+
+
+    }
+
+    /* .nev a:hover {
+    background-image: url(../官网/图片/icon_current_left.png), url(../官网/图片/icon_current_right.png);
+    background-position: 0 0, right 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: 1px solid #355758;
+    border-top: 1px solid #355758;
+} */
+    .ulist a:hover {
+        background-image: url(./图片/icon_current_left.png), url(./图片/icon_current_right.png);
+        background-position: 0 0, right 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-bottom: 1px solid #355758;
+        border-top: 1px solid #355758;
+    }
+
+    .ulist {
+        position: absolute;
+        width: 1290.2400px;
+        height: 41px;
+        padding: 30.720px;
+        margin: 0px 420.687px 0px 400.687px;
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+
+
+    }
+
+    .nev img {
+        position: absolute;
+        width: 187px;
+        height: 42px;
+        margin-top: 25px;
+        margin-left: 30px;
+    }
+
+    .buy {
+        width: 245.75px;
+        height: 101.74px;
+        background-color: red;
+        background-image: -webkit-linear-gradient(90deg, #860404 0%, #c51212 100%);
+        display: block;
+        position: absolute;
+        margin-left: 1785px;
+        font-size: 24.576px;
+        line-height: 101.74px;
+        color: #fff;
+        text-align: center;
+        margin-left: 1802px;
+    }
+
+    .buy a {
+        padding: 30.720px;
+    }
+
+    #box {
+        height: 81.91px;
+        width: 81.91px;
+        background: #000000cc;
+        position: fixed;
+        right: 34px;
+        bottom: 120px;
+        opacity: 0;
+        transition: opacity 1s;
+        z-index: 10;
+    }
+
+    .bigimg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        background: url(./图片四/bg_story\ \(1\).jpg);
+    }
+
+    .inner p {
+        font-size: 143.36px;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-shadow: 0 0 16px #000;
+        font-family: 'Cormorant Garamond', serif;
+        position: relative;
+        margin-top: 180px;
+        margin-left: 200px;
+    }
+
+    .img1 {
+        position: absolute;
+        margin-top: -94px;
+        width: 624.85px;
+        height: 74.78px;
+        margin-left: 95px;
+
+    }
+
+    .img2 {
+        position: absolute;
+        margin-top: -40px;
+        width: 163.84px;
+        height: 37.2px;
+        margin-left: 95px;
+
+    }
+
+    .img3 {
+        position: absolute;
+        margin-top: -40px;
+        width: 143px;
+        height: 28px;
+        margin-left: 235px;
+
+    }
+
+    .botimg {
+        width: 2031.2px;
+        height: 254.04px;
+        background: #000000;
+        position: relative;
+        margin-top: 6250px;
+        margin-left: 0px;
+    }
+
+    .botimg li {
+        display: inline-block;
+    }
+
+    .botimg ul {
+        padding: 10px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background: #000000;
+    }
+
+    .min {
+        width: 445.58px;
+        height: 76.22px;
+        background: black;
+        margin: 0 auto;
+    }
+
+    .xbox {
+        width: 155.48px;
+        height: 53.23px;
+    }
+
+    .ac {
+        width: 56.51px;
+        height: 53.23px;
+    }
+
+    .ps4 {
+        width: 103.58px;
+        height: 53.23px;
+    }
+
+    .steam {
+        width: 119.01px;
+        height: 53.23px;
+    }
+
+    .xbox img {
+        width: 135px;
+        height: 27px;
+        padding: 10px;
+    }
+
+    .ac img {
+        width: 36.04px;
+        height: 28px;
+        padding: 10px;
+    }
+
+    .ps4 img {
+        width: 83.1px;
+        height: 17px;
+        padding: 10px;
+    }
+
+    .steam img {
+        width: 98.54px;
+        height: 24px;
+        padding: 10px;
+    }
+
+    .textmore {
+        font-size: 1px;
+        color: #666666;
+        text-align: center;
+    }
+
+    .botimg a {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: underline;
+        position: relative;
+        margin-left: 975px;
+
+    }
+
+    .butlast {
+        background: black;
+        width: 2031.2px;
+        height: 87.02px;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .botimg p {
+        color: #666666;
+        text-align: center;
+    }
+
+    .botimg .imgbtn {
+        width: 106px;
+        height: 20px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .video {
+        width: 2031.2px;
+        height: 1142.55px;
+        background: pink;
+        margin-top: -344px;
+        position: absolute;
+    }
+
+    .video video {
+        width: 100%;
+        height: 100%;
+    }
+
+    video::-webkit-media-controls-enclosure {
+        display: none;
+    }
+
+    .black {
+        width: 1787.45px;
+        height: 458.44px;
+        background: pink;
+        margin-top: -229.22px;
+        position: absolute;
+        margin-left: 120px;
+        background: url(./图片四/bg_stripe.png);
+        color: #FFF;
+    }
+
+    .black h3 {
+        height: 131.07px;
+        font-size: 81.92px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .black .minb {
+        margin: 0px 0px 10px;
+        font-size: 40.96px;
+        height: 65.54px;
+        text-align: center;
+    }
+
+    .black .mina {
+        height: 98.25px;
+        font-size: 20.48px;
+        text-align: center;
+    }
+
+    .innerone {
+        width: 2031.2px;
+        height: 630.39px;
+        position: relative;
+        margin-top: 350px;
+    }
+
+    .bg {
+        background: #000;
+        width: 547.35px;
+        height: 522.84px;
+        display: inline-block;
+        /* padding: 0px 0px 24.625px; */
+        margin-left: 93.625px;
+        opacity: 0.8;
+    }
+
+    .ins {
+        position: absolute;
+        color: #FFF;
+        background: #000;
+        opacity: .8;
+        margin-top: -16px;
+        margin-left: -547px;
+    }
+
+    .bg1 {
+        background: #000;
+        width: 547.35px;
+        height: 522.84px;
+        display: inline-block;
+        /* padding: 0px 0px 24.625px; */
+        margin-left: 93.625px;
+        opacity: 0.8;
+    }
+
+    .innerone img {
+        width: 547.35px;
+        height: 307.88px;
+    }
+
+    .innerone1 img {
+        width: 547.35px;
+        height: 307.88px;
+    }
+
+    .bg div {
+        width: 328.4px;
+        height: 58.51px;
+        background: #000;
+        /* border: 1px solid #; */
+        color: #FFF;
+        text-align: center;
+        line-height: 58.51px;
+        font-size: 22.528px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 40.96px;
+        border: 1px solid #12f3f6;
+    }
+
+    .bg p {
+        width: 465.45px;
+        height: 70.4px;
+
+
+    }
+
+    .bg span {
+        width: 547.35px;
+        height: 131.82px;
+        font-size: 56.32px;
+        padding: 20.48px 40.96px 40.96px;
+        color: #fff;
+        position: relative;
+
+    }
+
+    .bg1 div {
+        width: 328.4px;
+        height: 58.51px;
+        background: #000;
+        /* border: 1px solid #; */
+        color: #FFF;
+        text-align: center;
+        line-height: 58.51px;
+        font-size: 22.528px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 40.96px;
+        border: 1px solid #12f3f6;
+    }
+
+    .bg1 p {
+        width: 465.45px;
+        height: 70.4px;
+
+
+    }
+
+    .bg1 span {
+        width: 547.35px;
+        height: 131.82px;
+        padding: 20.48px 40.96px 40.96px;
+        color: #fff;
+        position: relative;
+        font-size: 20.48px;
+
+    }
+
+
+    .text {
+        width: 1785.45px;
+        height: 77.88px;
+        background: #000000B3;
+        padding: 40.96px;
+        margin: 0px 122.88px 81.92px;
+        color: #FFF;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 75px;
+    }
+
+    .text li {
+        width: 1703.55px;
+        height: 32.75px;
+        font-size: 20.48px;
+    }
+
+    .tian {
+        width: 100%;
+        height: 200px;
+    }
+
+    .video1 {
+        float: right;
+        width: 1218.71px;
+        height: 685.53px;
+        background: green;
+    }
+
+    .tp {
+        width: 1015.6px;
+        height: 423.59px;
+        background: url(./图片四/bg_stripe.png);
+        padding: 20.48px 81.92px 40.96px 122.88px;
+        position: absolute;
+        margin-top: 290px;
+        margin-left: -200px;
+    }
+
+    .sub {
+        width: 2031.2px;
+        height: 685.53px;
+    }
+
+    .tp h3 {
+        width: 810.81px;
+        height: 114.68px;
+        font-size: 71.68px;
+        color: #fff;
+        position: relative;
+        margin-left: 200px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .bkg {
+        background: url(./图片四/parts_tab_white.png);
+        margin: 0px 0px 40.96px;
+        padding: 0px 0px 0px 10px;
+        width: 330.81px;
+        height: 32.75px;
+        position: absolute;
+        margin-left: 200px;
+    }
+
+    .tea {
+        color: #C3C3C3;
+        width: 810.81px;
+        position: absolute;
+        margin-left: 200px;
+        height: 98.25px;
+        font-size: 20.48px;
+        font-family: "Noto Sans SC", serif;
+    }
+
+    .bkl {
+        color: #C3C3C3;
+        font-size: 40.96px;
+        width: 810.81px;
+        height: 65.54px;
+        margin-top: 80px;
+        margin-left: 200px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .tp1 {
+        width: 1015.6px;
+        height: 323.59px;
+        background: url(./图片四/bg_stripe.png);
+        padding: 20.48px 81.92px 40.96px 122.88px;
+        position: absolute;
+        margin-top: 370px;
+        margin-left: -200px;
+    }
+
+    .sub1 {
+        width: 2031.2px;
+        height: 685.53px;
+        position: absolute;
+        margin-top: 300px;
+    }
+
+    .tp1 h3 {
+        width: 810.81px;
+        height: 114.68px;
+        font-size: 71.68px;
+        color: #fff;
+        position: relative;
+        margin-left: 200px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .bkg1 {
+        background: url(./图片四/parts_tab_white.png);
+        margin: 0px 0px 40.96px;
+        padding: 0px 0px 0px 10px;
+        width: 330.81px;
+        height: 32.75px;
+        position: absolute;
+        margin-left: 200px;
+    }
+
+    .tea1 {
+        color: #C3C3C3;
+        width: 810.81px;
+        position: absolute;
+        margin-left: 200px;
+        height: 98.25px;
+        font-size: 20.48px;
+        font-family: "Noto Sans SC", serif;
+        margin-top: 100px;
+    }
+
+    .bkl1 {
+        color: #C3C3C3;
+        font-size: 40.96px;
+        width: 810.81px;
+        height: 65.54px;
+        margin-top: 80px;
+        margin-left: 200px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .video2 {
+        float: right;
+        width: 1218.71px;
+        height: 685.53px;
+        background: green;
+    }
+
+
+    .tp2 {
+        width: 715.6px;
+        height: 323.59px;
+        background: url(./图片四/bg_stripe.png);
+        padding: 20.48px 81.92px 40.96px 122.88px;
+        position: absolute;
+        margin-top: 390px;
+        margin-left: 1000px;
+    }
+
+    .sub2 {
+        width: 2031.2px;
+        height: 685.53px;
+        position: absolute;
+        margin-top: 1170px;
+    }
+
+    .tp2 h3 {
+        width: 810.81px;
+        height: 114.68px;
+        font-size: 71.68px;
+        color: #fff;
+        position: relative;
+        margin-left: -100px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .bkg2 {
+        background: url(./图片四/parts_tab_white.png);
+        margin: 0px 0px 40.96px;
+        padding: 0px 0px 0px 10px;
+        width: 330.81px;
+        height: 32.75px;
+        position: absolute;
+        margin-left: -100px;
+    }
+
+    .tea2 {
+        color: #C3C3C3;
+        width: 810.81px;
+        position: absolute;
+        margin-left: -100px;
+        height: 98.25px;
+        font-size: 20.48px;
+        font-family: "Noto Sans SC", serif;
+    }
+
+    .bkl2 {
+        color: #C3C3C3;
+        font-size: 40.96px;
+        width: 810.81px;
+        height: 65.54px;
+        margin-top: 80px;
+        margin-left: -100px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .video3 {
+        float: left;
+        width: 1218.71px;
+        height: 685.53px;
+        background: green;
+    }
+
+
+
+    .tp3 {
+        width: 1015.6px;
+        height: 323.59px;
+        background: url(./图片四/bg_stripe.png);
+        padding: 20.48px 81.92px 40.96px 122.88px;
+        position: absolute;
+        margin-top: 390px;
+        margin-left: -200px;
+    }
+
+    .sub3 {
+        width: 2031.2px;
+        height: 685.53px;
+        position: absolute;
+        margin-top: 2000px;
+    }
+
+    .tp3 h3 {
+        width: 810.81px;
+        height: 114.68px;
+        font-size: 71.68px;
+        color: #fff;
+        position: relative;
+        margin-left: 200px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .bkg3 {
+        background: url(./图片四/parts_tab_white.png);
+        margin: 0px 0px 40.96px;
+        padding: 0px 0px 0px 10px;
+        width: 330.81px;
+        height: 32.75px;
+        position: absolute;
+        margin-left: 200px;
+    }
+
+    .tea3 {
+        color: #C3C3C3;
+        width: 810.81px;
+        position: absolute;
+        margin-left: 200px;
+        height: 98.25px;
+        font-size: 20.48px;
+        font-family: "Noto Sans SC", serif;
+    }
+
+    .bkl3 {
+        color: #C3C3C3;
+        font-size: 40.96px;
+        width: 810.81px;
+        height: 65.54px;
+        margin-top: 80px;
+        margin-left: 200px;
+        font-family: 'cwTeXKai', serif;
+    }
+
+    .video4 {
+        float: right;
+        width: 1218.71px;
+        height: 685.53px;
+        background: green;
+    }
+    
+    .icon {
+        width: 2031.2px;
+        position: absolute;
+        margin-top: 5950px;
+        background: #17181E;
+    }
+
+    .icon img {
+        margin: 0px 0px 0px 740px;
+    }
+</style>
+
+<body>
+
+    <!-- 导航条 -->
+    <div class="nev">
+        <img src="./图片/logo_dmc5.png" alt="">
+        <ul class="ulist">
+            <a href="./Devil_ABOUT.html">A B U O T</a>
+            <a href="./Devil_CHARACTER.html">C H A R A C T E R</a>
+            <a href="./Devil_SYSTEM.html">S Y S T E M</a>
+            <a href="./Devil_MOVIE.html">M O V I E</a>
+            <a href="./Devil_NEWS.html">N E W S</a>
+            <a href="./Devil_DLC.html">D L C</a>
+
+        </ul><span class="buy">
+            <p href="">B U Y</p>
+        </span>
+    </div>
+    <div class="bigimg"></div>
+
+    <div class="video">
+        <video controls="controls" loop muted autoplay="autoplay">
+            <source src="/i/movie.ogg" type="video/ogg" />
+            <source src="./图片五/devil may cry 5 -  bloodypalace.mp4" type="video/mp4" />
+            <source src="/i/movie.webm" type="video/webm" />
+            <object data="/i/movie.mp4" width="320" height="240">
+                <embed width="320" height="240" src="/i/movie.swf" />
+            </object>
+        </video>
+        <!--   <video src="blob:https://www.bilibili.com/964becd6-4575-4e3c-826f-5f1a3c7b77bf"></video> -->
+        <div class="black">
+            <h3>Bloody Palace</h3>
+            <p class="minb">免费更新「Bloody Palace」已经发布！</p>
+            <p class="mina">Bloody
+                Palace中，玩家需要接近全力地战斗，冲破多层迷宫。<br>在这个要与强敌进行多场连战的模式下，到达最深处是极之困难的任务，但若是真正的恶魔猎人，想必能够闯遍所有迷宫。<br>
+                ※需要以「HUMAN」或「DEVIL HUNTER」难度完成游戏本篇才可游玩</p>
+
+        </div>
+        <ul class="innerone">
+            <div class="bg"><img src="./图片四/bloody_01.jpg" alt=""><span>Nero</span>
+                <div>SCREENSHOT</div>
+            </div><span class="ins">Bloody Palace</span>
+            <div class="bg"><img src="./图片四/bloody_05.jpg" alt=""><span>Dante</span>
+                <div>SCREENSHOT</div>
+            </div><span class="ins">Bloody Palace</span>
+            <div class="bg"><img src="./图片四/bloody_07.jpg" alt=""><span>V</span>
+                <div>SCREENSHOT</div>
+            </div><span class="ins">Bloody Palace</span>
+        </ul>
+
+
+        <div class="sub">
+            <div class="tp">
+                <h3>Shared single-play</h3>
+                <div class="bkg"></div>
+                <div class="bkl">与素未谋面的人一起共享游戏体验！</div>
+                <p class="tea">《Devil May Cry 5》描绘了3名恶魔猎人的激斗，其命运于各处交错！<br>
+                    交错的除了他们的命运之外玩家的激斗亦会于世界各地的玩家交错。时而擦肩而过，时而共肩作战。是崭新的线上游玩方式(*1)。</p>
+
+            </div>
+            <div class="video1"><video src="./图片五/devil may cry 5 - shared single play.mp4" autoplay="autoplay" muted
+                    controls width="100%" loop poster="./images/pink.jpg"></video>
+            </div>
+
+        </div>
+        <div class="tian"></div>
+
+
+        <ul class="innerone1">
+            <div class="bg1"><img src="./图片四/play_01.jpg" alt=""><span>游玩时，有时会於远处看见一同战斗的恶魔猎人，他们可能是线上的其他玩家。</span>
+                <div>SCREENSHOT</div>
+            </div><span class="ins">Shared single-play</span>
+            <div class="bg1"><img src="./图片四/play_0203.jpg" alt=""><span>有些任务甚至更可能发展为「共斗」。
+                    为恶魔猎人间的竞赛和偶遇而热血沸腾吧！</span>
+                <div>SCREENSHOT</div>
+            </div><span class="ins">Shared single-play</span>
+            <div class="bg1"><img src="./图片四/play_03.jpg" alt=""><span>遇见的玩家会以「STARRING」显示名，能获得Gold Orb(*2)。</span>
+                <div>SCREENSHOT</div>
+            </div><span class="ins">Shared single-play</span>
+        </ul>
+        <ul class="text">
+            <li>*1 如要享用联机游玩等实时配对和线上游玩功能，需要加入各游戏硬件制造商的付费服务。</li>
+            <li>*2 此道具容许你在角色体力归零後仍可继续游玩。除了「赞好」外，还可以透过「在地图上拾取」丶「於Customization购买」和「登入奖励」取得。</li>
+        </ul>
+        <div class="sub1">
+            <div class="tp1">
+                <h3>AUTO-ASSIST</h3>
+                <div class="bkg1"></div>
+                <p class="tea1">想要不费太大力气打出一套漂亮连击，试试看自动辅助吧。<br>攻击输入不用变化，轻轻松松便可连出帅气连招。</p>
+
+            </div>
+            <div class="video2">
+                <!-- 第一种写法 目前用的越来越多 -->
+                <video src="./图片五/尼禄的战斗风格真的很痞 - 1.202205011814(Av596226413,P1).mp4" autoplay="autoplay" muted controls
+                    width="100%" loop poster="./images/pink.jpg"></video>
+            </div>
+
+        </div>
+
+
+        <div class="sub2">
+            <div class="tp2">
+                <h3>Photo mode</h3>
+                <div class="bkg2"></div>
+                <div class="bkl2">拍下最的棒一瞬间</div>
+                <p class="tea2">漂亮得与实景无异的画面，充满魅力的角色们的高速战斗。<br>这个模式能够自由地移动镜头的位置，把自己游玩过程中最棒的一瞬间拍下来。<br>
+                    分享拍下的照片，迷倒其他人吧。</p>
+
+            </div>
+            <div class="video3"><video src="./图片五/dsadadsa.mp4" autoplay="autoplay" muted controls width="100%" loop
+                    poster="./images/pink.jpg"></video>
+            </div>
+
+        </div>
+
+
+        <div class="sub3">
+            <div class="tp3">
+                <h3>VOID</h3>
+                <div class="bkg3"></div>
+                <div class="bkl3">在虚空中磨炼自己的技巧和走位</div>
+                <p class="tea3">可以在此随心磨炼技巧和走位。<br>可以自由选择敌人作为沙包，也可以开启和关闭动作和伤害。<br>※需要在游戏本篇购买或解锁才能选择技能和敌人。</p>
+
+            </div>
+            <div class="video4"><video src="./图片五/devil may cry 5 - void.mp4" autoplay="autoplay" muted controls
+                    width="100%" loop poster="./images/pink.jpg"></video>
+            </div>
+
+        </div>
+    </div>
+    <div class="inner">
+        <p>SYSTEM</p>
+        <img class="img1" src="./图片/title_underbar_black.png" alt="">
+        <img class="img2" src="./图片/title_underbar_red.png" alt="">
+        <img class="img3" src="./图片/title_underbar_green.png" alt="">
+    </div>
+    <!-- 背景 -->
+    <div class="icon"><img src="./图片五/QQ图片20220818145229.png" alt=""></div>
+    <div class="botimg">
+        <div class="botimg">
+
+
+            <ul>
+                <div class="min">
+                    <li class="xbox"><img src="./图片/xboxone_c_b.png" alt=""></li>
+                    <li class="ac"><img src="./图片/psf_b.png" alt=""></li>
+                    <li class="ps4"><img src="./图片/ps4_b.png" alt=""></li>
+                    <li class="steam"><img src="./图片/steam_b.png" alt=""></li>
+
+                </div>
+                <p class="textmore">"PlayStation" and the "PS" Family logo are registered trademarks and "PS4" is a
+                    trademark of Sony Interactive Entertainment Inc.<br>©Valve Corporation. Steam and the Steam logo are
+                    trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</p>
+            </ul>
+            <div class="butlast">
+                <div class="butlast1">
+                    <a href="">Privacy Policy</a>
+                    <img class="imgbtn" src="./图片/capcom_c_f.png" alt="">
+                    <p>© CAPCOM CO.,LTD. 2019 ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+        <!-- 返回顶部 -->
+        <img id="box" src="./图片/top_btn.png"></img>
+        <script src="./utils.js"></script>
+        <script>
+            let box = document.getElementById("box");
+            let html = document.documentElement || document.body;
+
+            //当滚动条滚动的时候，返回顶部的按钮慢慢出现
+            //慢慢出现 不能display, display与transition，不能一起使用
+            //         opacity可以与transition，一起使用
+            window.onscroll = function () {
+                if (html.scrollTop > 50) {
+                    box.style.opacity = 0.8;
+                } else {
+                    box.style.opacity = 0;
+                }
+            }
+        </script>
+</body>
+
+</html>
